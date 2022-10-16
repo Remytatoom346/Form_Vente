@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .name_1 {
+        text-transform: uppercase;
+       }
+       .name_2 {
+        text-transform: capitalize;
+       }
+       datalist {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <fieldset> <legend><i>client</i></legend>
+    <form action="">
+        <label for="Nom_prenom">Nom et Prénom :</label>
+        <input id="Nom" type="text" name_1="nom" class="name">
+        <input id="prenom" type="text" name_2="nom" class="name_2">
+    </form>
+    <form action="">
+        <label for="Adresse"> Adresse :</label>
+        <input id="Adresse" type="texte" name="nom">
+    </form>
+    <form action="">
+        <label for="Code_postal" >Code postal :</label>
+        <input id="Code_postal" type="number" name="nom" maxlength="5" size="5" >
+    </form>
+    <form action="">
+        <label for="Pays">Pays :</label>
+        <input id="Pays" type="text" name="" value="France" readonly>
+    </form>
+    </fieldset>
+</form>
+<br>
+<br>
+<form action="">
+    <fieldset> <legend><i>Commande</i></legend>
+    <form action="">
+        <label for="modele">Modèle :</label>
+        <input id="modele" type="text" name="nom" class="name" value="Road 66" readonly>
+    </form>
+    <form action="">
+        <label for="taille">Taille :</label>
+        <input type="range"> 
+        <datalist>
+            <option value="S"   label="S"></option>
+            <option value="M"   label="M"></option>
+            <option value="L"   label="L"></option>
+            <option value="XL"  label="XL"></option>
+        </datalist>
+        
+    </form>
+    <form action="">
+        <label for="qte" >Quantité :</label>
+        <input id="qte" type="number" name="nom" step="1">
+    </form>
+</fieldset>
+<input type="submit" value="Commander"> 
+<input type="reset" value="Recommencer"> 
+</form>
+</body>
+</html>
